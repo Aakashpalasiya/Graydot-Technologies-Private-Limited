@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container_1">
+            <p style="text-align: center; border-bottom: 1px solid black; padding-bottom: 10px;">Drag from here</p>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <img src="aakashIMG.jpeg" id="akash_img" alt="myimage" draggable="true" ondragstart="drag(event)">
+                <p draggable="true" ondragstart="drag(event)" id="drag_text">Drag me down</p>
+                <span draggable="true" ondragstart="drag(event)" id="drag_span">42</span>
+            </div>
+        </div>
+        <div class="container_2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p style="text-align: center; border-bottom: 1px solid black; padding-bottom: 10px;">Drop here</p>
+        </div>
+    </div>
+    <div>
+        <button type="reset" onclick="resetContainers()">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
