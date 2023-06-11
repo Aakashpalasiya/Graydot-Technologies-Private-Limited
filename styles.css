@@ -34,3 +34,30 @@ button {
   height: 200px;
   width: fit-content;
 }
+.dragged {
+  opacity: 0.5;
+}
+
+.container_2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
+  gap: 10px;
+}
+
+.container_2 p {
+  flex: 0 0 100%;
+}
+
+#successMessage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
